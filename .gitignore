@@ -4,6 +4,7 @@
 /src/main/webapp/content/css/main.css
 /target/classes/META-INF/resources**
 /src/test/javascript/coverage/
+/dummy/
 
 ######################
 # Node
