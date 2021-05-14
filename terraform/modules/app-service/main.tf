@@ -42,7 +42,7 @@ resource "azurerm_app_service" "application" {
 
     # These are app specific environment variables
     "QUARKUS_DATASOURCE_DB_KIND"  = "mysql"
-    "QUARKUS_DATASOURCE_JDBC.URL" = "jdbc:mysql://${var.database_url}?useUnicode=true&characterEncoding=utf8&useSSL=true&useLegacyDatetimeCode=false&serverTimezone=UTC"
+    "QUARKUS_DATASOURCE_JDBC_URL" = "jdbc:mysql://${var.database_url}?useUnicode=true&characterEncoding=utf8&useSSL=true&useLegacyDatetimeCode=false&serverTimezone=UTC"
     "QUARKUS_DATASOURCE_USERNAME" = var.database_username
     "QUARKUS_DATASOURCE_PASSWORD" = var.database_password
   }
