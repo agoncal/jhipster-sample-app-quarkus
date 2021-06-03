@@ -1,7 +1,7 @@
 variable "application_name" {
   type        = string
   description = "The name of your application"
-  default     = "jhipster-sample-application-quarkus"
+  default     = "demo-5412-0427-6050-1036"
 }
 
 variable "environment" {

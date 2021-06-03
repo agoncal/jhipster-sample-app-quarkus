@@ -33,3 +33,8 @@ variable "database_password" {
   type        = string
   description = "The database password"
 }
+
+variable "azure_application_insights_instrumentation_key" {
+  type        = string
+  description = "The Azure Application Insights instrumentation key"
+}
