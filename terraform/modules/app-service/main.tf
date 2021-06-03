@@ -13,8 +13,8 @@ resource "azurerm_app_service_plan" "application" {
   }
 
   sku {
-    tier = "Free"
-    size = "F1"
+    tier = "Basic"
+    size = "B1"
   }
 }
 
@@ -32,8 +32,7 @@ resource "azurerm_app_service" "application" {
 
   site_config {
     linux_fx_version          = "JAVA|11-java11"
-    always_on                 = false
-    use_32_bit_worker_process = true
+    always_on        = true
     ftps_state                = "FtpsOnly"
   }
 
