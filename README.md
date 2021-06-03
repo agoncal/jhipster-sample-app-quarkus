@@ -5,7 +5,7 @@ This application was generated using JHipster 6.10.5 and JHipster Quarkus 1.1.1,
 ## Deployment with NubesGen
 
 ```shell
-curl "https://nubesgen.com/demo.tgz?region=francecentral&application=APP_SERVICE.free&runtime=SPRING&database=MYSQL.basic&addons=application_insights&gitops=true" | tar -xzvf -
+curl "https://nubesgen.com/jhipster-sample-application-quarkus.tgz?region=francecentral&application=APP_SERVICE.free&runtime=SPRING&database=MYSQL.basic&addons=application_insights&gitops=true" | tar -xzvf -
 ```
 
 ## Development
