@@ -1,7 +1,7 @@
 variable "application_name" {
   type        = string
   description = "The name of your application"
-  default     = "jhipster-sample-application-quarkus"
+  default     = "demo-0710-7257-9574-9520"
 }
 
 variable "environment" {
@@ -13,5 +13,5 @@ variable "environment" {
 variable "location" {
   type        = string
   description = "The Azure region where all resources in this example should be created"
-  default     = "northeurope"
+  default     = "westeurope"
 }

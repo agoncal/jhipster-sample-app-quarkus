@@ -31,21 +31,18 @@ resource "azurerm_app_service" "application" {
   }
 
   site_config {
-    linux_fx_version          = "JAVA|11-java11"
+    linux_fx_version = "JAVA|11-java11"
     always_on        = true
-    ftps_state                = "FtpsOnly"
+    ftps_state       = "FtpsOnly"
   }
 
   app_settings = {
     "WEBSITES_ENABLE_APP_SERVICE_STORAGE" = "false"
 
-    // Monitoring with Azure Application Insights
-    "APPINSIGHTS_INSTRUMENTATIONKEY" = var.azure_application_insights_instrumentation_key
-
     # These are app specific environment variables
     "QUARKUS_HTTP_PORT"           = 80
     "QUARKUS_PROFILE"             = "prod"
-    "QUARKUS_DATASOURCE_DB_KIND"  = "mysql"
+
     "QUARKUS_DATASOURCE_JDBC_URL" = "jdbc:mysql://${var.database_url}?useUnicode=true&characterEncoding=utf8&useSSL=true&useLegacyDatetimeCode=false&serverTimezone=UTC"
     "QUARKUS_DATASOURCE_USERNAME" = var.database_username
     "QUARKUS_DATASOURCE_PASSWORD" = var.database_password
